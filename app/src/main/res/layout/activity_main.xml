@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alignmentMode="alignMargins"
+    android:columnCount="2"
+    android:columnOrderPreserved="true"
+    android:padding="20dp"
+    android:rowCount="8"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFname"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etAfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtAFname"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true" />
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFAddress"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etAfAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtAFAddress"
+        android:lines="1"
+        android:maxLines="2"
+        android:minLines="1" />
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFphone"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:autofillHints="@string/txtAFpafillHint"
+        android:ems="10"
+        android:hint="@string/txtAFpafillHint"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLines="1" />
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFDB"/>
+
+    <Button
+        android:id="@+id/btnAFBD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txtAFPickDate"
+        android:gravity="center"
+        android:hint="@string/txtAFPickDate" />
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFGrade"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtAFGrade"
+        android:lines="1"
+        android:maxLines="1" />
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAFchClass"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/etAfChclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtAFchClass"
+        android:lines="1"
+        android:maxLines="1" />
+
+    <TextView
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="@string/txtAfnotes"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/etAfNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:hint="@string/txtAfnotes"
+        android:isScrollContainer="true"
+        android:lines="2"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnAddDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:contentDescription="@string/txtAFDB"
+        android:text="@string/txtAFAddDB" />
+
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txtAFPickDate"
+        android:gravity="center"
+        android:hint="@string/txtAFPickDate" />
+
+    <Button
+        android:id="@+id/btnTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/txtAFPickDate"
+        android:gravity="center"
+        android:hint="@string/txtAFPickDate" />
+
+
+</GridLayout>
